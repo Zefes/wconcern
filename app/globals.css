@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@keyframes zoomSlow {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .animate-zoom {
+    animation: zoomSlow 5s ease-in-out forwards;
+  }
+  
