@@ -3,6 +3,10 @@
 import { useState, useEffect } from "react";
 import { X } from 'lucide-react';
 import Link from "next/link";
+<<<<<<< HEAD
+=======
+import Image from "next/image";
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
 
 const Menu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +30,11 @@ const Menu = () => {
     ];
 
     return (
+<<<<<<< HEAD
         <div className={`relative ${isClient}`}>
+=======
+        <div className="relative">
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
             {/* Fundo escuro quando o menu abre */}
             <div className={`fixed inset-0  bg-opacity-50 transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} sm:hidden`} />
 
@@ -42,7 +50,11 @@ const Menu = () => {
                     </Link>
                     ))}
                 {/* Botão Doar */}
+<<<<<<< HEAD
                 <Link href="#">
+=======
+                <Link href='/doa/'>
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
                     <button className="bg-teal-700 text-white px-6 py-2 rounded-full cursor-pointer hover:bg-yellow-500 transition duration-300 whitespace-nowrap">
                         Doar
                     </button>
@@ -54,7 +66,11 @@ const Menu = () => {
             <div className="sm:hidden flex items-center justify-between space-x-2">
 
                 {/* Botão Doar ajustado para a esquerda */}
+<<<<<<< HEAD
                 <Link href="#">
+=======
+                <Link href='/doa/'>
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
                     <button className="bg-teal-800 text-white px-4 py-1 rounded-full hover:bg-teal-700 transition duration-300">
                         Doar
                     </button>

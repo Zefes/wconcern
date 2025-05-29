@@ -2,7 +2,11 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+<<<<<<< HEAD
 
+=======
+import { text } from "stream/consumers";
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
 
 export default function Galeria() {
   const galeriaData = [

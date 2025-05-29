@@ -30,7 +30,11 @@ const DonationForm = () => {
 
       const result = await res.json();
       alert(result.message);
+<<<<<<< HEAD
     } catch {
+=======
+    } catch (error) {
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
       alert('Erro ao processar doação.');
     } finally {
       setLoading(false);

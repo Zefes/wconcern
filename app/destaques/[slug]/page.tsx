@@ -46,6 +46,7 @@ const Destaque = [
   },
 ];
 
+<<<<<<< HEAD
 export default async function ProjetoDetalhe({
   params,
 }: {
@@ -55,6 +56,11 @@ export default async function ProjetoDetalhe({
   const { slug } = await params;
 
   const projeto = Destaque.find((item) => item.slug === slug);
+=======
+export default async function ProjetoDetalhe({ params }: { params: { slug: string } }) {
+  // ⚠️ Use async function e acesse diretamente params.slug (já tratado como Promise pelo Next.js)
+  const projeto = Destaque.find((item) => item.slug === params.slug);
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
 
   if (!projeto) return notFound();
 
@@ -62,6 +68,10 @@ export default async function ProjetoDetalhe({
     <section className="max-w-[1500px] mx-auto px-6 py-12">
       <h1 className="text-4xl font-bold text-[#00bfa5] mb-10">{projeto.titulo}</h1>
       <div className="grid md:grid-cols-2 gap-12 items-start">
+<<<<<<< HEAD
+=======
+        {/* Imagem à esquerda */}
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
         <div className="relative w-full h-[500px] md:h-[600px] lg:h-[600px]">
           <Image
             src={projeto.imagem}
@@ -70,6 +80,12 @@ export default async function ProjetoDetalhe({
             className="rounded-xl object-cover"
           />
         </div>
+<<<<<<< HEAD
+=======
+
+
+        {/* Texto à direita */}
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
         <div>
           <div
             className="text-gray-700 text-lg space-y-4 text-justify"
@@ -79,4 +95,8 @@ export default async function ProjetoDetalhe({
       </div>
     </section>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26

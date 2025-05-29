@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import Image from "next/image";
+>>>>>>> f85e012c202c72b1bf533f737166d8666c638c26
 import SlideListe from "./slides/slideliste";
 import Quemsomos from "./components/inicio/quemsomos";
 import DestaqueLista from "./components/inicio/destaque";
